@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Camara Fara Pierre, analyste de données spécialisé en analyse, visualisation et interprétation des données.">
+    <meta name="theme-color" content="#0b1020">
+
+```
+<title>Camara Fara Pierre | Data Analyst</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js" defer></script>
+```
+
+</head>
+
+<body>
+
+```
+<header class="header">
+    <a href="#accueil" class="logo">
+        <span class="logo-icon">F</span>
+        <span>FARA<span class="accent">.</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle"
+            aria-label="Ouvrir le menu" aria-expanded="false"
+            aria-controls="nav-links">
+        ☰
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="#accueil" class="active">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact" class="nav-contact">Me contacter ↗</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- SECTION ACCUEIL -->
+    <section class="hero section-container" id="accueil">
+
+        <div class="hero-content">
+            <div class="profile-photo-wrap">
+           <img
+        src="portrait.jpeg"
+        alt="Portrait professionnel de Camara Fara Pierre"
+        class="profile-photo" >
+            </div>
+            <div class="availability">
+                <span class="status-dot"></span>
+                PORTFOLIO EN CONSTRUCTION
+            </div>
+
+            <p class="eyebrow">BONJOUR, JE SUIS</p>
+
+            <h1>
+                Camara Fara<br>
+                <span class="gradient-text">Pierre.</span>
+            </h1>
+
+            <h2>Analyste de données junior</h2>
+
+            <p class="hero-description">
+                Je transforme les données brutes en informations
+                compréhensibles pour faciliter l'analyse, révéler
+                des tendances et soutenir la prise de décision.
+                Mon parcours en génie de l'environnement enrichit
+                mon approche analytique.
+            </p>
+
+            <div class="hero-tags">
+                <span>Excel</span>
+                <span>Power BI</span>
+                <span>Python</span>
+                <span>SQL</span>
+            </div>
+
+            ```html
+<div class="hero-buttons">
+    <a href="#projets" class="btn btn-primary">
+        Découvrir mes projets <span>↗</span>
+    </a>
+
+    <a href="#apropos" class="btn btn-secondary">
+        Mon parcours
+    </a>
+
+    <a
+        href="documents/CV.pdf"
+        class="btn btn-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Consulter mon CV ↗
+    </a>
+
+    <a
+        href="documents/CV_Camara_Fara_Pierre.pdf"
+        class="btn btn-secondary"
+        download="CV_Camara_Fara_Pierre.pdf"
+    >
+        Télécharger mon CV ↓
+    </a>
+</div>
+```
+
+
+            <div class="hero-note">
+                <span class="note-icon">✦</span>
+                <span>
+                    Évaluation environnementale
+                    <span class="note-separator">·</span>
+                    Analyse de données
+                </span>
+            </div>
+
+        </div>
+
+        <!-- PANNEAU VISUEL DATA -->
+        <div class="hero-visual">
+
+            <div class="visual-heading">
+                <div>
+                    <span class="visual-label">DATA ANALYTICS</span>
+                    <h3>Data overview</h3>
+                </div>
+
+                <span class="live-badge">
+                    <span class="status-dot"></span>
+                    DEMO
+                </span>
+            </div>
+
+            <div class="metric-grid">
+
+                <article class="metric-card">
+                    <span class="metric-label">Lignes analysées</span>
+                    <strong>1 250</strong>
+                    <span class="metric-caption">Données de démonstration</span>
+                </article>
+
+                <article class="metric-card">
+                    <span class="metric-label">Indicateurs</span>
+                    <strong>08</strong>
+                    <span class="metric-caption">Exemple de suivi</span>
+                </article>
+
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div>
+                        <h4>Évolution mensuelle</h4>
+                        <p>Valeurs illustratives</p>
+                    </div>
+
+                    <span class="chart-period">12 mois</span>
+                </div>
+
+                <div class="chart-wrapper">
+                    <canvas id="overviewChart"
+                            role="img"
+                            aria-label="Graphique illustratif d'une évolution mensuelle">
+                        Graphique illustratif d'une évolution mensuelle.
+                    </canvas>
+                </div>
+            </div>
+
+            <div class="visual-footer">
+                <span><i class="legend-dot cyan"></i> Analyse</span>
+                <span><i class="legend-dot purple"></i> Visualisation</span>
+                <span class="footer-code">PYTHON · POWER BI</span>
+            </div>
+
+            <div class="decorative-orb orb-one"></div>
+            <div class="decorative-orb orb-two"></div>
+
+        </div>
+
+    </section>
+
+    <!-- BANDEAU OUTILS -->
+    <section class="tools-strip">
+        <div class="section-container tools-inner">
+            <span>MES OUTILS</span>
+            <strong>Excel</strong>
+            <strong>Power BI</strong>
+            <strong>Python</strong>
+            <strong>SQL</strong>
+            <strong>QGIS</strong>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section class="section-container content-section" id="apropos">
+
+        <div class="section-heading">
+            <span class="eyebrow">01 — À PROPOS</span>
+            <h2>Des données aux <span class="gradient-text">décisions.</span></h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-main">
+                <p>
+                    Je suis titulaire d'une formation en génie de
+                    l'environnement et je développe mes compétences
+                    en analyse de données, en programmation et en
+                    visualisation de l'information.
+                </p>
+
+                <p>
+                    Mon objectif est de transformer des données
+                    complexes en résultats exploitables grâce à
+                    Excel, Power BI, Python et SQL.
+                </p>
+
+                <p>
+                    Ce portfolio présente mes projets personnels,
+                    mes méthodes de travail et ma progression
+                    technique dans le domaine de la data.
+                </p>
+            </div>
+
+            <div class="about-highlight">
+                <span class="highlight-icon">⌘</span>
+                <h3>Mon approche</h3>
+                <p>
+                    Comprendre le problème, préparer les données,
+                    analyser les résultats et communiquer les
+                    conclusions de façon claire.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION COMPÉTENCES -->
+    <section class="content-section section-alt" id="competences">
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span class="eyebrow">02 — COMPÉTENCES</span>
+                <h2>Mes outils <span class="gradient-text">d'analyse.</span></h2>
+                <p>Les technologies que j'utilise pour explorer et valoriser les données.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <span class="skill-number">01</span>
+                    <div class="skill-icon excel-icon">X</div>
+                    <h3>Excel</h3>
+                    <p>Nettoyage, formules, tableaux croisés dynamiques et reporting.</p>
+                    <span class="skill-level">Niveau intermédiaire</span>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">02</span>
+                    <div class="skill-icon powerbi-icon">▥</div>
+                    <h3>Power BI</h3>
+                    <p>Modélisation, visualisations, indicateurs et tableaux de bord.</p>
+                    <span class="skill-level">Niveau intermédiaire</span>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">03</span>
+                    <div class="skill-icon python-icon">Py</div>
+                    <h3>Python</h3>
+                    <p>Manipulation de données, analyse exploratoire et graphiques.</p>
+                    <span class="skill-level">Niveau intermédiaire</span>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">04</span>
+                    <div class="skill-icon sql-icon">SQL</div>
+                    <h3>SQL</h3>
+                    <p>Requêtes, jointures, agrégations et extraction de données.</p>
+                    <span class="skill-level">Niveau intermédiaire</span>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS -->
+    <section class="section-container content-section" id="projets">
+
+        <div class="section-heading">
+            <span class="eyebrow">03 — PORTFOLIO</span>
+            <h2>Mes projets <span class="gradient-text">data.</span></h2>
+            <p>
+                Des études de cas pour démontrer ma capacité
+                à transformer des données en informations utiles.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-visual project-visual-one">
+                    <span class="project-badge">01 / BI</span>
+                    <div class="mini-bars" aria-hidden="true">
+                        <span style="height: 35%"></span>
+                        <span style="height: 60%"></span>
+                        <span style="height: 45%"></span>
+                        <span style="height: 80%"></span>
+                        <span style="height: 65%"></span>
+                        <span style="height: 95%"></span>
+                    </div>
+                    <span class="project-visual-title">SALES ANALYTICS</span>
+                </div>
+
+                <div class="project-body">
+                    <span class="project-category">BUSINESS INTELLIGENCE</span>
+                    <h3>Analyse des ventes</h3>
+                    <p>
+                        Étude de cas pour analyser le chiffre d'affaires,
+                        la performance des produits et les tendances mensuelles.
+                    </p>
+                    <div class="project-tags">
+                        <span>Excel</span>
+                        <span>Power BI</span>
+                    </div>
+                    <span class="project-status">Projet à réaliser</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-visual project-visual-two">
+                    <span class="project-badge">02 / PY</span>
+                    <div class="code-visual" aria-hidden="true">
+                        <span>df.head()</span>
+                        <span>df.describe()</span>
+                        <span>df.isna().sum()</span>
+                        <span>plt.show()</span>
+                    </div>
+                    <span class="project-visual-title">DATA EXPLORATION</span>
+                </div>
+
+                <div class="project-body">
+                    <span class="project-category">DATA SCIENCE</span>
+                    <h3>Analyse exploratoire</h3>
+                    <p>
+                        Nettoyage d'un jeu de données, traitement des
+                        valeurs manquantes et visualisation des résultats.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                    </div>
+                    <span class="project-status">Projet à réaliser</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-visual project-visual-three">
+                    <span class="project-badge">03 / SQL</span>
+                    <div class="database-visual" aria-hidden="true">
+                        <div>SELECT</div>
+                        <div>FROM</div>
+                        <div>GROUP BY</div>
+                        <div>ORDER BY</div>
+                    </div>
+                    <span class="project-visual-title">SQL ANALYTICS</span>
+                </div>
+
+                <div class="project-body">
+                    <span class="project-category">DATA MANAGEMENT</span>
+                    <h3>Analyse avec SQL</h3>
+                    <p>
+                        Exploration d'une base relationnelle pour
+                        répondre à des questions métier.
+                    </p>
+                    <div class="project-tags">
+                        <span>SQL</span>
+                        <span>Reporting</span>
+                    </div>
+                    <span class="project-status">Projet à réaliser</span>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="projects-note">
+            Les projets ci-dessus sont des études de cas prévues.
+            Ils ne représentent pas encore des réalisations achevées.
+        </p>
+
+    </section>
+
+<!-- SECTION CERTIFICATIONS -->
+<section id="certifications" class="certifications section">
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">MES FORMATIONS</span>
+            <h2>Mes <span class="highlight">certifications</span></h2>
+            <p>
+                Des formations complémentaires en analyse de données,
+                intelligence artificielle et cartographie.
+            </p>
+        </div>
+
+        <div class="certifications-grid">
+
+            <!-- CERTIFICATION 1 : ANALYSE DE DONNÉES -->
+            <article class="certification-card">
+                <div class="certification-icon">📊</div>
+
+                <div class="certification-content">
+                    <span class="certification-category">
+                        Analyse de données
+                    </span>
+
+                    <h3>Analyse de données avec R, STATA et SPSS</h3>
+
+                    <p class="certification-issuer">
+                        Oscar Aksanti
+                    </p>
+
+                    <p>
+                        Formation consacrée à l'analyse statistique
+                        et à l'exploitation des données avec R,
+                        STATA et SPSS.
+                    </p>
+
+                    <span class="certification-status">
+                        Certification obtenue
+                    </span>
+
+                    <div class="certification-actions">
+                        <a href="documents/certificat-oscar-analyse-donnees.pdf"
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Voir le certificat ↗
+                        </a>
+
+                        <a href="documents/certificat-oscar-analyse-donnees.pdf"
+                           class="certification-download"
+                           download>
+                            Télécharger le PDF ↓
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CERTIFICATION 2 : INTELLIGENCE ARTIFICIELLE -->
+            <article class="certification-card">
+                <div class="certification-icon">🤖</div>
+
+                <div class="certification-content">
+                    <span class="certification-category">
+                        Intelligence artificielle
+                    </span>
+
+                    <h3>
+                        Intelligence artificielle appliquée au monde
+                        professionnel avec Claude
+                    </h3>
+
+                    <p class="certification-issuer">
+                        Oscar Aksanti
+                    </p>
+
+                    <p>
+                        Formation sur l'utilisation de l'intelligence
+                        artificielle Claude dans un contexte professionnel.
+                    </p>
+
+                    <span class="certification-status">
+                        Certification obtenue
+                    </span>
+
+                    <div class="certification-actions">
+                        <a href="documents/certificat-oscar-ia-claude.pdf"
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Voir le certificat ↗
+                        </a>
+
+                        <a href="documents/certificat-oscar-ia-claude.pdf"
+                           class="certification-download"
+                           download>
+                            Télécharger le PDF ↓
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CERTIFICATION 3 : ORANGE DIGITAL CENTER -->
+            <article class="certification-card">
+                <div class="certification-icon">💻</div>
+
+                <div class="certification-content">
+                    <span class="certification-category">
+                        Analyse de données
+                    </span>
+
+                    <h3>Certification en analyse de données</h3>
+
+                    <p class="certification-issuer">
+                        Orange Digital Center
+                    </p>
+
+                    <p>
+                        Formation complémentaire dans le domaine
+                        de l'analyse et de l'exploitation des données.
+                    </p>
+
+                    <span class="certification-status">
+                        Certification obtenue
+                    </span>
+
+                    <div class="certification-actions">
+                        <a href="documents/certificat-orange-digital-center.pdf"
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Voir le certificat ↗
+                        </a>
+
+                        <a href="documents/certificat-orange-digital-center.pdf"
+                           class="certification-download"
+                           download>
+                            Télécharger le PDF ↓
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CERTIFICATION 4 : QGIS -->
+            <article class="certification-card">
+                <div class="certification-icon">🌍</div>
+
+                <div class="certification-content">
+                    <span class="certification-category">
+                        Cartographie et SIG
+                    </span>
+
+                    <h3>Certification en cartographie avec QGIS</h3>
+
+                    <p class="certification-issuer">
+                        Organisme de formation à préciser
+                    </p>
+
+                    <p>
+                        Formation en cartographie numérique et
+                        exploitation de données géographiques avec QGIS.
+                    </p>
+
+                    <span class="certification-status">
+                        Certification obtenue
+                    </span>
+
+                    <div class="certification-actions">
+                        <a href="documents/certificat-qgis.pdf"
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Voir le certificat ↗
+                        </a>
+
+                        <a href="documents/certificat-qgis.pdf"
+                           class="certification-download"
+                           download>
+                            Télécharger le PDF ↓
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+    <!-- SECTION CONTACT -->
+    <section class="content-section section-alt" id="contact">
+        <div class="section-container contact-section">
+
+            <span class="eyebrow">04 — CONTACT</span>
+            <h2>Construisons quelque chose <span class="gradient-text">d'utile.</span></h2>
+
+            <p>
+                Vous recrutez un analyste de données junior ou souhaitez
+                échanger sur un projet ? Je serais heureux de discuter
+                avec vous.
+            </p>
+
+<div class="contact-links">
+
+    <a
+        href="mailto:camarafarapierre04@gmail.com"
+        class="btn btn-primary contact-button"
+    >
+        ✉ M'écrire par e-mail
+    </a>
+
+    <a
+        href="https://www.linkedin.com/in/fara-pierre-camara/"
+        class="btn btn-secondary contact-button"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Mon profil LinkedIn ↗
+    </a>
+
+</div>
+
+<p class="contact-note">
+    Disponible pour échanger sur des opportunités professionnelles
+    en analyse de données et en évaluation environnementale.
+</p>
+
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="section-container footer-inner">
+        <a href="#accueil" class="logo">
+            <span class="logo-icon">F</span>
+            <span>FARA<span class="accent">.</span></span>
+        </a>
+
+        <p>Camara Fara Pierre · Portfolio Data Analytics</p>
+
+        <a href="#accueil" class="back-top">Retour en haut ↑</a>
+    </div>
+
+    <div class="copyright">
+        © <span id="current-year"></span> Camara Fara Pierre. Tous droits réservés.
+    </div>
+</footer>
+```
+   <script src="script.js"></script>
+</body>
+</html>
