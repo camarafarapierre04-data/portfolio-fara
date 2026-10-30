@@ -1,0 +1,14 @@
+{
+  "name": "Eureka - Environnement",
+  "dataColors": [
+    "#17365D",
+    "#4472C4",
+    "#70AD47",
+    "#ED7D31",
+    "#A5A5A5",
+    "#5B9BD5"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#17365D",
+  "tableAccent": "#4472C4"
+}
